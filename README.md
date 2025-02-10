@@ -46,7 +46,7 @@ Esta solución automatiza pruebas en sitios de retail utilizando Selenium y FFmp
 ## Uso
 Para ejecutar las pruebas, usa el siguiente comando:
 ```bash
-python prueba_0012.py
+python Grabacion_ventanas.py
 ```
 
 ## Funcionalidades
