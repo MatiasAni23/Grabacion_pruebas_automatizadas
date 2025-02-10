@@ -2,4 +2,3 @@ selenium
 openpyxl
 pygetwindow
 python-dotenv
-unittest
