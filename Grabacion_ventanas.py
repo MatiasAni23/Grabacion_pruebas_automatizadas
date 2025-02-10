@@ -127,7 +127,7 @@ class Pruebas_retail(unittest.TestCase):
         cls.drivers.append(cls.driver3)
         cls.hwnds.append(hwnd3)
 
-
+        # Inicio contador
         cls.start_program = time.perf_counter()
         
     #Función para grabar multiples ventanas
