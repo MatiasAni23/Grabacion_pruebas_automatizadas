@@ -188,6 +188,7 @@ class Pruebas_retail(unittest.TestCase):
             "-f", "gdigrab", # Formato de captura de pantalla de Windows
             "-i", f"hwnd={hwnd}", # Pasar el HWND como entrada (Identificador de la ventana a grabar)
             "-framerate", "30", # Frecuencia de cuadros por segundo (FPS)
+            "-s", "1920x1080" # Resolución de video (Reducción de calidad: 1280x720; 854x480)
             "-vf", (
                 f"drawtext=textfile={self.overlay_text_file}:" # Texto con las acciones
                 f"x='main_w-text_w-10':y='main_h-text_h-50':"  # Texto en esquina inferior derecha
