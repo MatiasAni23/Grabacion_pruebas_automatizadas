@@ -74,6 +74,15 @@ Los resultados se almacenan en:
 ## Notas
 - FFmpeg debe estar instalado y agregado al PATH del sistema.
 - Se recomienda ejecutar las pruebas en un entorno con buena conexión a Internet para obtener tiempos de carga precisos.
+- Para reducir el consumo de recursos al grabar con FFmpeg, se pueden aplicar las siguientes optimizaciones:
+  - **Reducir la resolución**: Usar `-s 1280x720` o `-s 854x480` para disminuir el tamaño del video y el uso de RAM.
+  - **Reducir el framerate**: Configurar `-framerate 15` en lugar de 30 FPS para bajar la carga en la CPU.
+  - **Usar un preset más eficiente**: Cambiar `-preset ultrafast` a `-preset veryfast` o `-preset faster` para mejorar la compresión sin afectar mucho el rendimiento.
+  - **Ajustar la calidad con CRF**: Subir el valor de `-crf` a `32` o más para reducir el tamaño del archivo con menor impacto visual.
+  - **Eliminar el audio si no es necesario**: Agregar `-an` para desactivar la grabación de audio y ahorrar recursos.
+  - **Usar un códec más eficiente**: Si es compatible, cambiar `-c:v libx264` por `-c:v libx265` para mejor compresión.
+
+
 
 
 
