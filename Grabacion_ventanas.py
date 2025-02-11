@@ -200,7 +200,7 @@ class Pruebas_retail(unittest.TestCase):
             ),
             "-c:v", "libx264", # Codec de video H.264 para una compresión eficiente
             "-preset", "ultrafast", # Velocidad de compresión
-            "-crf", "28", # Calidad de compresión (Valores más altos reducen calidad de video, pero ahorran espacio)
+            "-crf", "28", # Calidad de compresión (Valores más altos reducen calidad de video, pero ahorran espacio, reducen ram y cpu)
             "-c:a", "aac", # Codec de audio
             "-y", # Sobreescribe el archivo de salida si ya existe
             output_file
